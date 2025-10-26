@@ -439,3 +439,18 @@ body {
 .status.warning {
   color: #ffaa00;
 }
+/* ----------- DOCUMENTATIE (week1–5) ----------- */
+body.doc-page {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+body.doc-page a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body.doc-page a:hover {
+  text-decoration: underline;
+}
