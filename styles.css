@@ -297,3 +297,126 @@ body {
   color: #003366;
   font-weight: 700;
 }
+/* --------- STATION-SCHERM --------- */
+.station-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #e6eef7;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto Slab', serif;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  background-color: #0057b8;
+  margin: 0;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.nav li a:hover {
+  background-color: #004599;
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0057b8;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.header .flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header img {
+  width: 35px;
+  border: 1px solid #fff;
+}
+
+.header .station-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.header .clock {
+  font-weight: 600;
+}
+
+.train-list {
+  background-color: #e6eef7;
+}
+
+.train-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.train-row.light {
+  background-color: #f7fbff;
+  color: #001a33;
+}
+
+.train-row.dark {
+  background-color: #0057b8;
+  color: #fff;
+}
+
+.train-row .time {
+  width: 60px;
+  font-weight: 700;
+}
+
+.destination {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.destination strong {
+  font-size: 1rem;
+}
+
+.destination span {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.platform {
+  width: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.status {
+  width: 110px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.status.ok {
+  color: #27ae60;
+}
+
+.status.delay {
+  color: #ffb200;
+}
