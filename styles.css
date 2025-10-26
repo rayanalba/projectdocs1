@@ -77,3 +77,223 @@ th {
   color: #ffcc00;
   font-weight: 600;
 }
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #1c1c1c;
+  margin: 0;
+  color: #fff;
+}
+
+.perron-container {
+  width: 420px;
+  margin: 30px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0057b8;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.header .flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header img {
+  width: 35px;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+.header .platform-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.header .time {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.train-list {
+  background-color: #e6eef7;
+}
+
+.train-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+.train-row.light {
+  background-color: #f7fbff;
+  color: #001a33;
+}
+
+.train-row.dark {
+  background-color: #0057b8;
+  color: #fff;
+}
+
+.train-row .time {
+  width: 55px;
+  font-weight: 700;
+}
+
+.destination {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.destination strong {
+  font-size: 1rem;
+}
+
+.destination span {
+  font-size: 0.85rem;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.train-code {
+  width: 80px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.status {
+  width: 110px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.status.delay {
+  color: #ffb200;
+}
+
+.status.cancelled {
+  color: #ff4444;
+}
+
+.status.ok {
+  color: #27ae60;
+}
+/* ---------- WAGONSCHERM ---------- */
+.wagon-container {
+  width: 420px;
+  margin: 30px auto;
+  background-color: #e8f4fb;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+  color: #003366;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.wagon-header {
+  background-color: #0057b8;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.wagon-header .time {
+  font-size: 1.1rem;
+}
+
+.wagon-header .lang {
+  font-size: 1.3rem;
+}
+
+.wagon-header .menu {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.wagon-main {
+  padding: 20px;
+}
+
+.destination-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destination-block .icon {
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.destination-block h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #003366;
+}
+
+.destination-block p {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  color: #004080;
+}
+
+.time-info {
+  text-align: right;
+}
+
+.time-info .clock {
+  font-size: 1.3rem;
+}
+
+.time-info .departure {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.time-info .delay {
+  color: #ff9900;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.wagon-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.wagon-box {
+  background-color: #0057b8;
+  color: #fff;
+  border-radius: 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.wagon-box span {
+  position: absolute;
+  bottom: -22px;
+  font-size: 0.9rem;
+  color: #003366;
+  font-weight: 700;
+}
