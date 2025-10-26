@@ -9,11 +9,11 @@ body {
 }
 
 .container {
-  max-width: 65px;
-  margin: 50px auto;
+  max-width: 800px;
+  margin: 30px auto;
   background: #111;
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 6px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .perron-container {
-  width: 420px;
+  width: 90%;
   margin: 30px auto;
   border-radius: 6px;
   overflow: hidden;
@@ -190,7 +190,7 @@ body {
 }
 /* ---------- WAGONSCHERM ---------- */
 .wagon-container {
-  width: 420px;
+  width: 90%;
   margin: 30px auto;
   background-color: #e8f4fb;
   border-radius: 6px;
