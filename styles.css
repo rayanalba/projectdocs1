@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto';
   background-color: #0a0a0a;
   color: #fff;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 65px;
   margin: 50px auto;
   background: #111;
   padding: 20px 40px;
