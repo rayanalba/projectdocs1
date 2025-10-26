@@ -297,34 +297,45 @@ body {
   color: #003366;
   font-weight: 700;
 }
-/* --------- STATION-SCHERM --------- */
+/* ----------- ALGEMEEN ----------- */
+body {
+  background-color: #1c1c1c;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  color: #001a33;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ----------- CONTAINER ----------- */
 .station-container {
   width: 90%;
   max-width: 800px;
-  margin: 30px auto;
+  background-color: #e6eef7;
   border-radius: 6px;
   overflow: hidden;
-  background-color: #e6eef7;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  font-family: 'Roboto Slab', serif;
+  margin: 30px 0;
 }
 
+/* ----------- NAVIGATIE ----------- */
 .nav {
   list-style-type: none;
+  margin: 0;
   padding: 0;
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
   background-color: #0057b8;
-  margin: 0;
 }
 
 .nav li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
-  display: inline-block;
   font-weight: 600;
+  padding: 10px 15px;
 }
 
 .nav li a:hover {
@@ -332,10 +343,11 @@ body {
   border-radius: 4px;
 }
 
+/* ----------- HEADER ----------- */
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: #0057b8;
   color: #fff;
   padding: 10px 15px;
@@ -352,29 +364,32 @@ body {
   border: 1px solid #fff;
 }
 
-.header .station-title {
+.header .title {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .header .clock {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
-.train-list {
-  background-color: #e6eef7;
-}
-
-.train-row {
+/* ----------- ICOONRIJ ----------- */
+.icon-row {
+  background-color: #cde2f7;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 15px;
+  justify-content: space-around;
+  padding: 8px 0;
+  font-size: 1.3rem;
 }
 
-.train-row.light {
-  background-color: #f7fbff;
-  color: #001a33;
+/* ----------- LIJST ----------- */
+.train-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 70px 70px 1fr;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 0.95rem;
 }
 
 .train-row.dark {
@@ -382,41 +397,45 @@ body {
   color: #fff;
 }
 
-.train-row .time {
-  width: 60px;
-  font-weight: 700;
+.train-row.light {
+  background-color: #f7fbff;
 }
 
-.destination {
-  flex: 1;
-  padding-left: 10px;
+.train-type {
+  font-weight: 700;
 }
 
 .destination strong {
   font-size: 1rem;
 }
 
-.destination span {
-  font-size: 0.85rem;
-  opacity: 0.9;
-}
-
 .platform {
-  width: 50px;
   text-align: center;
   font-weight: 700;
 }
 
-.status {
-  width: 110px;
+.time {
   text-align: right;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.status {
+  text-align: right;
+  font-weight: 600;
 }
 
 .status.ok {
-  color: #27ae60;
+  color: #00cc66;
 }
 
 .status.delay {
   color: #ffb200;
+}
+
+.status.cancelled {
+  color: #ff3333;
+}
+
+.status.warning {
+  color: #ffaa00;
 }

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vertrekscherm</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="station-container">
+
     <!-- Navigatie -->
     <ul class="nav">
       <li><a href="index.html">Station</a></li>
@@ -22,45 +23,99 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="BE" />
         <span>NL</span>
       </div>
-      <div class="station-title">Antwerpen-Centraal</div>
-      <div class="clock">15:38:10</div>
+      <div class="title">Vertrek ➜</div>
+      <div class="clock">15:35:15</div>
     </header>
+
+    <!-- Icoonrij -->
+    <div class="icon-row">
+      <span>🚆</span>
+      <span>📍</span>
+      <span>🛤️</span>
+      <span>🕒</span>
+      <span>ℹ️</span>
+    </div>
 
     <!-- Vertreklijst -->
     <main class="train-list">
+      <div class="train-row dark">
+        <div class="train-type">IC</div>
+        <div class="destination"><strong>Essen</strong></div>
+        <div class="platform">21</div>
+        <div class="time">15:39</div>
+        <div class="status ok">✔️</div>
+      </div>
+
       <div class="train-row light">
+        <div class="train-type">SI</div>
+        <div class="destination"><strong>Nijvel</strong></div>
+        <div class="platform change">↯6</div>
+        <div class="time">15:40</div>
+        <div class="status warning">⚠️ Spoorverandering →6</div>
+      </div>
+
+      <div class="train-row dark">
+        <div class="train-type">S32</div>
+        <div class="destination"><strong>Puurs</strong></div>
+        <div class="platform">23</div>
+        <div class="time">15:43</div>
+        <div class="status ok">✔️</div>
+      </div>
+
+      <div class="train-row light">
+        <div class="train-type">EC</div>
+        <div class="destination"><strong>Rotterdam</strong></div>
+        <div class="platform">21</div>
         <div class="time">15:45</div>
-        <div class="destination"><strong>Brussel-Zuid</strong><br><span>via Mechelen</span></div>
+        <div class="status cancelled">❌ Geannuleerd</div>
+      </div>
+
+      <div class="train-row dark">
+        <div class="train-type">IC</div>
+        <div class="destination"><strong>Turnhout</strong></div>
+        <div class="platform">14</div>
+        <div class="time">15:47</div>
+        <div class="status ok">✔️</div>
+      </div>
+
+      <div class="train-row light">
+        <div class="train-type">IC</div>
+        <div class="destination"><strong>Tongeren</strong></div>
+        <div class="platform">24</div>
+        <div class="time">15:49</div>
+        <div class="status delay">⏳ +7 min</div>
+      </div>
+
+      <div class="train-row dark">
+        <div class="train-type">S32</div>
+        <div class="destination"><strong>Rosendaal</strong></div>
+        <div class="platform">22</div>
+        <div class="time">15:50</div>
+        <div class="status ok">✔️</div>
+      </div>
+
+      <div class="train-row light">
+        <div class="train-type">IC</div>
+        <div class="destination"><strong>De Panne</strong></div>
         <div class="platform">6</div>
-        <div class="status ok">✔️ Op tijd</div>
+        <div class="time">15:51</div>
+        <div class="status ok">✔️</div>
       </div>
 
       <div class="train-row dark">
-        <div class="time">16:02</div>
-        <div class="destination"><strong>Charleroi-Centraal</strong><br><span>via Namen</span></div>
-        <div class="platform">3</div>
-        <div class="status delay">+ 5 min</div>
+        <div class="train-type">IC</div>
+        <div class="destination"><strong>Charleroi-Centraal</strong></div>
+        <div class="platform">23</div>
+        <div class="time">15:52</div>
+        <div class="status ok">✔️</div>
       </div>
 
       <div class="train-row light">
-        <div class="time">16:15</div>
-        <div class="destination"><strong>Oostende</strong><br><span>via Gent-Sint-Pieters</span></div>
-        <div class="platform">5</div>
-        <div class="status ok">✔️ Op tijd</div>
-      </div>
-
-      <div class="train-row dark">
-        <div class="time">16:30</div>
-        <div class="destination"><strong>Luik-Guillemins</strong><br><span>via Leuven</span></div>
-        <div class="platform">8</div>
-        <div class="status delay">+ 3 min</div>
-      </div>
-
-      <div class="train-row light">
-        <div class="time">16:45</div>
-        <div class="destination"><strong>Essen</strong><br><span>via Kapellen</span></div>
-        <div class="platform">2</div>
-        <div class="status ok">✔️ Op tijd</div>
+        <div class="train-type">L</div>
+        <div class="destination"><strong>Leuven</strong></div>
+        <div class="platform">11</div>
+        <div class="time">15:55</div>
+        <div class="status ok">✔️</div>
       </div>
     </main>
   </div>
